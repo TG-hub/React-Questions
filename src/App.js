@@ -6,7 +6,7 @@ import Kitty from './kitty.js'
 import HelloKitty from './helloKitty.js'
 import {Person} from './person.js'
 import {PersonWithProps} from './person.js'
-
+import {Adder} from './adder.js'
 
 
 /*export default class Test extends React.Component {
@@ -100,6 +100,7 @@ function App() {
     <HelloKitty />
     <Person />
     <PersonWithProps name='John' age={20}/>
+    <Adder firstNumber={7} secondNumber={3}/>
     </>
   );
 }
