@@ -1,7 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Hello from './hello.js';
+import Kitty from './kitty.js'
+import HelloKitty from './helloKitty.js'
 
 /*export default class Test extends React.Component {
   render() {
@@ -75,6 +77,9 @@ function App() {
     <QuestionTwo/>
     <QuestionThree/>
     <QuestionFour/>
+    <Hello />
+    <Kitty />
+    <HelloKitty />
     </>
   );
 }
