@@ -46,12 +46,35 @@ function QuestionThree () {
   )
 }
 
+/*function QuestionFour () {
+  const [title, setTitle] = useState
+}
+*/
+
+class QuestionFour extends React.Component {
+  constructor(props) {
+    super(props)
+      this.state = { title: 'Page Title'}
+    }
+
+    render () {
+      return (
+      <div>
+        <h1>Question Four: {this.state.title}</h1>
+        <p>this is the body text for this page</p>
+      </div>
+    )
+    }
+  }
+  
+
 function App() {
   return (
     <>
     <QuestionOne/>
     <QuestionTwo/>
     <QuestionThree/>
+    <QuestionFour/>
     </>
   );
 }
