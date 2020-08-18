@@ -4,6 +4,10 @@ import './App.css';
 import Hello from './hello.js';
 import Kitty from './kitty.js'
 import HelloKitty from './helloKitty.js'
+import {Person} from './person.js'
+import {PersonWithProps} from './person.js'
+
+
 
 /*export default class Test extends React.Component {
   render() {
@@ -70,6 +74,20 @@ class QuestionFour extends React.Component {
   }
   
 
+/*class PersonWithProps extends React.Component {
+  constructor(props){
+      super(props)
+  }
+
+  render () {
+  return (
+      <div>
+          <p>Name: {this.props.name}</p>
+          <p>Age: {this.props.age}</p>
+      </div>
+  )}
+}*/
+
 function App() {
   return (
     <>
@@ -80,6 +98,8 @@ function App() {
     <Hello />
     <Kitty />
     <HelloKitty />
+    <Person />
+    <PersonWithProps name='John' age={20}/>
     </>
   );
 }
